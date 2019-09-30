@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+                android:id="@+id/nav_job"
+                android:icon="@drawable/ic_businessman"
+                android:title="@string/menu_job"/>
+        <item
+                android:id="@+id/nav_top"
+                android:icon="@drawable/ic_top123"
+                android:title="@string/menu_top"/>
+        <item
+                android:id="@+id/nav_metting"
+                android:icon="@drawable/ic_meeting"
+                android:title="@string/menu_meeting"/>
+        <item
+                android:id="@+id/nav_book"
+                android:icon="@drawable/ic_books"
+                android:title="@string/menu_book"/>
+        <item
+                android:id="@+id/nav_photo"
+                android:icon="@drawable/ic_photographer"
+                android:title="@string/menu_photo"/>
+        <item
+                android:id="@+id/nav_competition"
+                android:icon="@drawable/ic_trophy"
+                android:title="@string/menu_Competition"/>
+        <item
+                android:id="@+id/nav_blood"
+                android:icon="@drawable/ic_blood"
+                android:title="Blood"/>
+        <item
+                android:id="@+id/nav_apk"
+                android:icon="@drawable/ic_android"
+                android:title="APK"/>
+    </group>
+
+   </menu>

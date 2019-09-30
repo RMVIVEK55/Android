@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                       xmlns:tools="http://schemas.android.com/tools"
+                                       xmlns:app="http://schemas.android.com/apk/res-auto"
+                                       android:orientation="vertical"
+                                       android:layout_gravity="center"
+                                       android:gravity="center"
+                                       android:background="@color/white"
+                                       android:layout_width="match_parent"
+
+                                       android:layout_height="match_parent"
+
+                                       tools:context=".fragment.PostJobFragment">
+
+    <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+                                           android:fillViewport="true"
+                                           android:fitsSystemWindows="true"
+                                           android:layout_height="match_parent">
+
+
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:layout_width="match_parent"
+                  android:layout_marginTop="50dp"
+                  android:layout_marginBottom="30dp"
+                  android:textColor="@color/black"
+                  android:textStyle="bold"
+                  android:layout_centerHorizontal="true"
+                  android:textSize="16sp"
+
+                  android:layout_marginLeft="40dp"
+                  android:layout_marginRight="40dp"
+                  android:id="@+id/tv_form_lable"
+                  android:textAlignment="center"
+
+                  android:text="if you  need some study materials kindly send request here
+congratulation to Top 5th rank of arni sowrastra 10 +12 students"
+                  android:layout_height="wrap_content"/>
+        <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/img_job_post_close"
+                android:layout_marginTop="20dp"
+                android:padding="5dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/ic_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/sp_postjobtype"
+                android:spinnerMode="dialog"
+                android:layout_below="@+id/tv_form_lable"
+android:dropDownSelector="@color/white"
+
+                style="@style/spinnerItemStyle"
+        />
+        <EditText
+                android:id="@+id/edt_blood_name"
+                style="@style/edtie"
+                android:hint="Blood Donor Name"
+                android:layout_below="@+id/sp_postjobtype"
+        />
+        <EditText
+                android:inputType="number"
+                android:maxLength="10"
+                android:id="@+id/edt_blood_mob"
+                style="@style/edtie"
+                android:hint=" 10 Digit Mobile Number"
+                android:layout_below="@+id/edt_blood_name"
+        />
+        <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_post_job_date"
+                android:layout_below="@+id/edt_blood_mob"
+                style="@style/edtie"
+
+                android:hint="--- Select last date ---"/>
+        <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edt_book_purpose"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/hint"
+                android:textSize="14sp"
+android:gravity="top"
+                android:hint="Purpose"
+                android:layout_below="@+id/tv_post_job_date"
+                android:layout_marginBottom="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:padding="7dp"
+
+                android:background="@drawable/edit_bg"
+     android:layout_marginTop="15dp"/>
+
+
+
+        <androidx.appcompat.widget.AppCompatEditText
+
+                android:layout_below="@+id/edt_book_purpose"
+                android:id="@+id/et_postjob_company"
+                style="@style/txt"
+                android:hint="Company Name"
+        />
+        <androidx.appcompat.widget.AppCompatEditText
+
+                android:layout_below="@+id/et_postjob_company"
+                android:id="@+id/et_postjobcompany_link"
+                style="@style/txt"
+                android:hint="Company web link"
+        />
+
+            <androidx.appcompat.widget.AppCompatButton
+                    android:layout_marginBottom="40dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_below="@+id/et_postjobcompany_link"
+                    android:id="@+id/btn_job_post"
+                    style="@style/txt"
+                    android:layout_width="match_parent"
+                    android:text="Post"
+                    android:textColor="@color/black"
+                    android:textAllCaps="false"
+                    android:layout_height="wrap_content"/>
+
+        <RelativeLayout android:layout_width="match_parent"
+                        android:visibility="gone"
+                        android:id="@+id/rel_lay_book_req"
+                        android:background="@color/smokeWhite"
+                        android:layout_below="@+id/tv_form_lable"
+                        android:layout_height="match_parent">
+            <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rc_book_req"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+            />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout android:layout_width="match_parent"
+                        android:id="@+id/pb_job"
+                  android:visibility="gone"
+
+                        android:layout_height="match_parent">
+            <ProgressBar
+                    android:layout_marginTop="40dp"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="50dp"
+
+                    android:layout_height="50dp"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+    <Button android:layout_width="70dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+
+            android:layout_marginRight="30dp"
+android:background="@drawable/plusdarkcopy"
+            android:layout_marginBottom="32dp"
+            android:id="@+id/fbut_book_req_post"
+            android:layout_height="70dp"/>
+</RelativeLayout>

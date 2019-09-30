@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@color/tabSelectColor" android:state_selected="true"
+        >
+        <scale
+            android:duration="2000"
+            android:fromXScale="0.3"
+            android:toXScale="1.0"
+            android:fromYScale="0.3"
+            android:toYScale="1.0"
+            android:pivotX="50%"
+            android:pivotY="50%" />
+    </item>
+    <item android:drawable="@color/tabBgColor"  android:state_selected="false" android:state_focused="false"
+        android:state_pressed="false"/>
+</selector>
